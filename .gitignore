@@ -1,0 +1,51 @@
+# 构建
+build*/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+*.ninja
+*.ninja_log
+
+# 编译产物
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Qt
+moc_*.cpp
+qrc_*.cpp
+*.moc
+ui_*.h
+.qtc_clangd/
+CMakeLists.txt.user*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 编辑器 / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 内部材料（不随项目发布）
+# 工作区记忆、发布评估、求职与面试材料都放在仓库之外，这里留一份兜底规则，
+# 防止误 add。真实内容在 ../FinPulseTerminal-career/。
+.workbuddy/
+docs/resume-and-interview.md
+docs/github-readiness-review.md
