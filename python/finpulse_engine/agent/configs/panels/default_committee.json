@@ -1,0 +1,25 @@
+{
+  "id": "default_committee",
+  "name": "标准投委会",
+  "description": "三个视角互补的分析师独立研判，再互相质证一轮，最后由主席综合。weight 是**方向票的权重**：风控官按职责不产出方向标签（它评估的是风险，不是方向），因此这里给它 1.0 —— 给一个不投票的委员配高权重是没意义的配置。需要体现话语权差异时（例如给技术面 1.0、给量价 0.5），改这里的 weight 即可，计票会跟着变。",
+  "chair": "committee_chair",
+  "members": [
+    {
+      "role": "technical_analyst",
+      "weight": 1.0,
+      "cross_examine": true
+    },
+    {
+      "role": "flow_analyst",
+      "weight": 1.0,
+      "cross_examine": true
+    },
+    {
+      "role": "risk_officer",
+      "weight": 1.0,
+      "cross_examine": true
+    }
+  ],
+  "quorum": 2,
+  "rounds": 2
+}
